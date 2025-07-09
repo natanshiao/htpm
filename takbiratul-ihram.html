@@ -3,57 +3,39 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Dasboard</title>
+  <title>Takbiratul Ihram</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
-  <style>
-     .option-card {
-      transition: transform 0.2s, box-shadow 0.2s;
-      cursor: pointer;
-    }
-    .option-card:hover {
-      transform: translateY(-5px);
-      box-shadow: 0 8px 16px rgba(0,0,0,0.2);
-      background-color: #f8f9fa;
-    }
-    .option-img {
-      height: 100%;
-      object-fit: cover;
-      aspect-ratio: 1 / 1;
-    }
-    .content-img {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 1rem;
-    }
-  </style>
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
-<body class="d-flex flex-column min-vh-100 bg-white text-black">
+<body>
 
   <!-- Header -->
-  <header class="text-white py-3" style="background-color: rgb(14, 52, 39);">
+  <header class="header">
     <div class="container-fluid">
       <div class="d-flex justify-content-between align-items-center">
         <div class="logo">
-          <img src="images/muhammadiyah_logo.png" style="width: 5rem;" alt="Logo Placeholder" class="img-fluid">
+          <img src="images/muhammadiyah_logo.png" alt="Logo Placeholder" class="img-fluid">
         </div>
-        <div class="text-end">
+        <div class="text-end title">
           <h5 class="mb-0">PROYEK UAS HTP MUHAMMADIYAH</h5>
         </div>
       </div>
     </div>
   </header>
 
-  <!-- Main Content Wrapper -->
-  <div class="d-flex flex-grow-1" style="overflow: hidden;">
+  <!-- Sidebar Toggle Button -->
+  <button class="sidebar-toggle d-lg-none" type="button" aria-label="Toggle sidebar">
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-list" viewBox="0 0 16 16">
+      <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+    </svg>
+  </button>
 
+  <div class="d-flex">
     <!-- Sidebar -->
-   <!-- Sidebar -->
-    <aside class="bg-dark border-end p-3" style="width: 250px; height: 100vh; overflow-y: auto;">
-      <h5 class="mb-4" style="color: #ffffff;">Gerakan Sholat</h5>
+    <aside class="sidebar">
+      <h5>Gerakan Sholat</h5>
       <div class="row row-cols-1 g-3">
-        <!-- Opsi 1 sampai 9 -->
-        <!-- Ulangi bagian ini untuk semua opsi -->
         <div class="col">
           <a href="takbiratul-ihram.html" class="text-decoration-none">
             <div class="card option-card text-center shadow-sm">
@@ -64,7 +46,6 @@
             </div>
           </a>
         </div>
-
         <div class="col">
           <a href="bersedekap.html" class="text-decoration-none">
             <div class="card option-card text-center shadow-sm">
@@ -75,7 +56,6 @@
             </div>
           </a>
         </div>
-
         <div class="col">
           <a href="rukuk.html" class="text-decoration-none">
             <div class="card option-card text-center shadow-sm">
@@ -86,7 +66,6 @@
             </div>
           </a>
         </div>
-
         <div class="col">
           <a href="itidal.html" class="text-decoration-none">
             <div class="card option-card text-center shadow-sm">
@@ -97,7 +76,6 @@
             </div>
           </a>
         </div>
-
         <div class="col">
           <a href="sujud.html" class="text-decoration-none">
             <div class="card option-card text-center shadow-sm">
@@ -108,7 +86,6 @@
             </div>
           </a>
         </div>
-
         <div class="col">
           <a href="d2antsujud.html" class="text-decoration-none">
             <div class="card option-card text-center shadow-sm">
@@ -119,7 +96,6 @@
             </div>
           </a>
         </div>
-
         <div class="col">
           <a href="tawal.html" class="text-decoration-none">
             <div class="card option-card text-center shadow-sm">
@@ -130,7 +106,6 @@
             </div>
           </a>
         </div>
-
         <div class="col">
           <a href="takhir.html" class="text-decoration-none">
             <div class="card option-card text-center shadow-sm">
@@ -141,7 +116,6 @@
             </div>
           </a>
         </div>
-
         <div class="col">
           <a href="salam.html" class="text-decoration-none">
             <div class="card option-card text-center shadow-sm">
@@ -154,37 +128,32 @@
         </div>
       </div>
     </aside>
+    <div class="sidebar-overlay"></div>
 
-      <!-- Konten Utama Kanan -->
-    <div class="flex-grow-1 d-flex justify-content-center align-items-center min-vh-100">
-      <div class="text-center p-4" style="max-width: 600px;">
-        <h2 class="mb-4" style="font-weight: bold;">Takbiratul Ihram</h2>
-        <img src="images/takbiratul.webp" alt="Gambar" class="img-fluid rounded shadow-sm mb-3" style="width: 100%;" />
-        <h5>
-          اللَّهُ أَكْبَرُ
-        </h5>
-        <p>Allahu Akbar</p>
+    <!-- Main Content -->
+    <main class="main-content">
+      <div class="content-wrapper">
+        <h3 class="text-center">Takbiratul Ihram</h3>
+        <img src="images/takbiratul.webp" alt="Takbiratul Ihram" class="img-fluid rounded shadow-sm mb-4 content-img">
+        
+        <p class="arabic">اللَّهُ أَكْبَرُ</p>
+        <p><em>Allahu Akbar</em></p>
         <p>Allah Maha Besar</p>
-        <div class="audio-container mt-4">
-    <audio controls>
-      <source src="audio/takbir_allahu_akbar.mp3" type="audio/mpeg">
-      Browser Anda tidak mendukung elemen audio.
-    </audio>
-  </div>
+        <audio controls src="audio/takbir_allahu_akbar.mp3" class="w-100"></audio>
+
       </div>
-    </div>
-    
+    </main>
   </div>
 
   <!-- Footer -->
-  <footer class="text-white pt-4 mt-auto" style="background-color: rgb(14, 52, 39);">
+  <footer class="footer">
     <div class="container">
       <div class="row">
-        <div class="col-md-4 mb-3">
+        <div class="col-md-4 mb-4">
           <h5>Tentang Saya</h5>
-          <p>Saya Denathan, mahasiswa biasa dan bukan spesialis web, saya lebih suka low level programming.</p>
+          <p>Saya Denathan, mahasiswa biasa dan bukan spesialis web, saya lebih suka low level programming, idgf.</p>
         </div>
-        <div class="col-md-4 mb-3">
+        <div class="col-md-4 mb-4">
           <h5>Kontak</h5>
           <ul class="list-unstyled">
             <li>Email: 231220024@unmuhpnk.ac.id</li>
@@ -192,17 +161,17 @@
             <li>Alamat: Pontianak, Indonesia</li>
           </ul>
         </div>
-        <div class="col-md-4 mb-3">
+        <div class="col-md-4 mb-4">
           <h5>Pintasan</h5>
           <ul class="list-unstyled">
-            <li><a href="https://github.com/bit-8/" class="text-white">GitHub saya</a></li>
-            <li><a href="https://www.facebook.com/share/1CJ88smTiC/" class="text-white">Facebook Dedy Susanto</a></li>
-            <li><a href="https://github.com/natanshiao/htpm" class="text-white">Repositori proyek ini</a></li>
+            <li><a href="https://github.com/bit-8/">GitHub saya</a></li>
+            <li><a href="https://www.facebook.com/share/1CJ88smTiC/">Facebook Dedy Susanto</a></li>
+            <li><a href="https://github.com/natanshiao/htpm">Repositori proyek ini</a></li>
           </ul>
         </div>
       </div>
-      <hr class="border-light">
-      <div class="text-center pb-3">
+      <hr>
+      <div class="text-center pt-3">
         <small>&copy; 2025 Denathan. Semua hak cipta dilindungi.</small>
       </div>
     </div>
@@ -210,5 +179,6 @@
 
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.min.js" integrity="sha384-7qAoOXltbVP82dhxHAUje59V5r2YsVfBafyUDxEdApLPmcdhBPg1DKg1ERo0BZlK" crossorigin="anonymous"></script>
+  <script src="js/script.js"></script>
 </body>
 </html>
